@@ -1,5 +1,5 @@
 {
-  "provenance": "Counts derived from Qwen transcript-extracted labels; not independently verified prevalence or current catalog truth.",
+  "provenance": "Counts recalculated from the committed normalized dataset after seven field-level official-doc corrections/additions. Baseline records are transcript-extracted; the targeted corrected fields are first-party crosschecked. Not prevalence estimates for all Composio integrations.",
   "sample_size": 100,
   "categories": {
     "CRM & Sales": 10,
@@ -14,19 +14,21 @@
     "AI & Media": 10
   },
   "auth_method_mentions": {
-    "oauth2": 59,
+    "oauth2": 60,
     "api_key": 67,
     "basic": 9,
     "jwt_keypair": 2,
     "none": 2,
     "unknown": 1,
+    "token": 1,
+    "workload_identity_federation": 1,
     "hmac": 1
   },
   "credential_access_labels": {
     "free": 46,
     "trial": 33,
-    "partner": 8,
-    "admin": 5,
+    "admin": 7,
+    "partner": 6,
     "paid": 6,
     "local": 2
   },
@@ -39,15 +41,15 @@
     "none": 1
   },
   "mcp_status_labels": {
-    "official": 46,
-    "community": 35,
+    "official": 47,
+    "community": 34,
     "none": 15,
     "unknown": 4
   },
   "buildability_labels": {
     "now": 67,
-    "caveats": 22,
-    "outreach": 9,
+    "caveats": 24,
+    "outreach": 7,
     "local": 2
   },
   "review_queue": [
@@ -123,56 +125,56 @@
       "self_serve_free_trial": 5,
       "paid_admin_partner": 4,
       "official_mcp_label": 8,
-      "build_now_label": 5
+      "build_now_label": 9
     },
     "CRM & Sales": {
       "n": 10,
       "self_serve_free_trial": 9,
       "paid_admin_partner": 1,
       "official_mcp_label": 4,
-      "build_now_label": 8
+      "build_now_label": 10
     },
     "Communications": {
       "n": 10,
       "self_serve_free_trial": 9,
       "paid_admin_partner": 1,
       "official_mcp_label": 1,
-      "build_now_label": 8
+      "build_now_label": 10
     },
     "Data & SEO": {
       "n": 10,
       "self_serve_free_trial": 7,
       "paid_admin_partner": 2,
       "official_mcp_label": 5,
-      "build_now_label": 5
+      "build_now_label": 8
     },
     "Dev & Infra": {
       "n": 10,
       "self_serve_free_trial": 10,
       "paid_admin_partner": 0,
       "official_mcp_label": 10,
-      "build_now_label": 9
+      "build_now_label": 10
     },
     "Ecommerce": {
       "n": 10,
       "self_serve_free_trial": 6,
       "paid_admin_partner": 4,
       "official_mcp_label": 2,
-      "build_now_label": 5
+      "build_now_label": 7
     },
     "Finance & Fintech": {
       "n": 10,
       "self_serve_free_trial": 6,
       "paid_admin_partner": 4,
       "official_mcp_label": 5,
-      "build_now_label": 5
+      "build_now_label": 8
     },
     "Marketing & Ads": {
       "n": 10,
       "self_serve_free_trial": 9,
       "paid_admin_partner": 1,
       "official_mcp_label": 1,
-      "build_now_label": 4
+      "build_now_label": 10
     },
     "Productivity & PM": {
       "n": 10,
@@ -185,8 +187,17 @@
       "n": 10,
       "self_serve_free_trial": 8,
       "paid_admin_partner": 2,
-      "official_mcp_label": 2,
-      "build_now_label": 8
+      "official_mcp_label": 3,
+      "build_now_label": 9
     }
-  }
+  },
+  "targeted_corrections": [
+    "DealCloud: partner/outreach -> admin/caveats (enterprise license and tenant-admin, no universal partner-only evidence)",
+    "LinkedIn Ads: partner/outreach -> admin/caveats (developer application/access approval; restricted products differ)",
+    "Pylon: MCP community -> official (vendor-hosted MCP documented)",
+    "Brex: added OAuth2 as official MCP auth alongside admin API token",
+    "Salesforce: added official hosted MCP connection evidence",
+    "Snowflake: added PAT/token and workload identity auth evidence",
+    "Neo4j Aura: added official hosted MCP source and per-instance/enablement caveat"
+  ]
 }
