@@ -1,10 +1,16 @@
-name: Publish research status page
+name: Build and publish the research case study
 on:
   push:
     branches: [main]
     paths:
+      - "data/**"
+      - "audit/**"
+      - "src/**"
+      - "tests/**"
       - "site/**"
+      - "README.md"
       - ".github/workflows/pages.yml"
+      - ".github/workflows/validate.yml"
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,6 +27,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate source inventory
+        run: python src/validate.py
+      - name: Reconcile verification ledger
+        run: python src/verify_sample.py --write
+      - name: Reproduce prior comparison
+        run: python src/reproduce_prior_comparison.py
+      - name: Generate case study and static data assets
+        run: python src/build_report.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
