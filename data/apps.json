@@ -1,0 +1,2641 @@
+[
+  {
+    "id": 1,
+    "app": "Salesforce",
+    "category": "CRM & Sales",
+    "description": "Enterprise CRM platform",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Spring '26: new connected apps restricted; use External Client Apps. Free Developer Edition org has API access.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+      "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 2,
+    "app": "HubSpot",
+    "category": "CRM & Sales",
+    "description": "CRM + marketing/sales platform",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Private apps are legacy; new builds use developer-platform projects. Free developer account.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "https://developers.hubspot.com/ai-tools/mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 3,
+    "app": "Pipedrive",
+    "category": "CRM & Sales",
+    "description": "Sales CRM",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "API token on every plan; 14-day trial for a workspace.",
+    "evidence_urls": [
+      "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "https://www.pipedrive.com/en/features/crm-api"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 4,
+    "app": "Attio",
+    "category": "CRM & Sales",
+    "description": "Next-gen customizable CRM",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Unpublished OAuth apps limited to 25 workspaces; workspace API key self-serve.",
+    "evidence_urls": [
+      "https://docs.attio.com/rest-api/guides/authentication",
+      "https://docs.attio.com/mcp/overview"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 5,
+    "app": "Twenty",
+    "category": "CRM & Sales",
+    "description": "Open-source CRM",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Self-host free; per-workspace generated REST+GraphQL; cloud has trial.",
+    "evidence_urls": [
+      "https://docs.twenty.com/developers/extend/api"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 6,
+    "app": "Podio",
+    "category": "CRM & Sales",
+    "description": "Work-management / custom CRM apps",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "OAuth2 incl. app-auth and password flows; API key self-serve at developers.podio.com.",
+    "evidence_urls": [
+      "https://developers.podio.com/authentication",
+      "https://developers.podio.com/"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 7,
+    "app": "Zoho CRM",
+    "category": "CRM & Sales",
+    "description": "CRM suite",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Self-client grant avoids redirect setup; free edition + trial.",
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "https://www.zoho.com/developer/oauth/self-client/overview.html"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 8,
+    "app": "Close",
+    "category": "CRM & Sales",
+    "description": "Sales CRM for SMBs",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "API key via Basic (key as username); trial workspace.",
+    "evidence_urls": [
+      "https://developer.close.com/api/overview",
+      "https://developer.close.com/api/overview/api-key-authentication"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 9,
+    "app": "Copper",
+    "category": "CRM & Sales",
+    "description": "CRM for Google Workspace",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Token+email headers; API access tied to paid plans (trial available); 180 req/min.",
+    "evidence_urls": [
+      "https://developer.copper.com/introduction/requests.html",
+      "https://developer.copper.com/introduction/oauth/index.html"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 10,
+    "app": "DealCloud",
+    "category": "CRM & Sales",
+    "description": "PE/VC deal CRM (Intapp)",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "outreach",
+    "blocker": "OAuth2 client-credentials; client_id/apiKey issued to enterprise clients by admin; official MCP also OAuth.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://api.docs.dealcloud.com/mcp/authentication"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 11,
+    "app": "Zendesk",
+    "category": "Support & Helpdesk",
+    "description": "Customer support suite",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "API tokens being removed: unused deactivated Jul 28 2026, all stop Apr 30 2027 -> OAuth required. Per-tenant MCP reported.",
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "https://support.zendesk.com/hc/en-us/articles/10851263566234-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 12,
+    "app": "Intercom",
+    "category": "Support & Helpdesk",
+    "description": "Messaging + support platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Workspace access token from Developer Hub; OAuth for public apps; dev workspace on trial.",
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "https://developers.intercom.com/docs/guides/mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 13,
+    "app": "Freshdesk",
+    "category": "Support & Helpdesk",
+    "description": "Helpdesk",
+    "auth_methods": [
+      "basic"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "API key as Basic username (key:X); key in agent profile; trial account.",
+    "evidence_urls": [
+      "https://developers.freshdesk.com/api/",
+      "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 14,
+    "app": "Front",
+    "category": "Support & Helpdesk",
+    "description": "Shared-inbox customer ops",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Bearer via settings API token or OAuth; trial workspace.",
+    "evidence_urls": [
+      "https://dev.frontapp.com/docs/authentication",
+      "https://dev.frontapp.com/docs/create-and-revoke-api-tokens"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 15,
+    "app": "Pylon",
+    "category": "Support & Helpdesk",
+    "description": "B2B support platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Only Admin users can create API tokens; paid B2B product, no self-serve dev tier; SDKs + CLI.",
+    "evidence_urls": [
+      "https://docs.usepylon.com/pylon-docs/developer/api"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 16,
+    "app": "LiveAgent",
+    "category": "Support & Helpdesk",
+    "description": "Helpdesk / live chat",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "API v3 key (owner/admin creates); docs live inside the account; 30-day trial.",
+    "evidence_urls": [
+      "https://support.liveagent.com/911737-API-v3",
+      "https://support.liveagent.com/docs/api/v3/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 17,
+    "app": "Plain",
+    "category": "Support & Helpdesk",
+    "description": "B2B support / customer ops",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "GraphQL",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "Machine-user API keys with fine-grained permissions; OAuth app for user-level calls.",
+    "evidence_urls": [
+      "https://www.plain.com/docs/graphql/authentication",
+      "https://www.plain.com/docs/graphql/introduction"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 18,
+    "app": "Help Scout",
+    "category": "Support & Helpdesk",
+    "description": "Helpdesk / shared inbox",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "OAuth2 (auth-code + client-credentials); create app under My Apps; trial account.",
+    "evidence_urls": [
+      "https://developer.helpscout.com/mailbox-api/overview/authentication",
+      "https://developer.helpscout.com/mailbox-api/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 19,
+    "app": "Gorgias",
+    "category": "Support & Helpdesk",
+    "description": "Ecommerce helpdesk",
+    "auth_methods": [
+      "basic"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Basic auth: email + API key from Settings > REST API; trial store.",
+    "evidence_urls": [
+      "https://docs.gorgias.com/en-US/rest-api-208286",
+      "https://developers.gorgias.com/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 20,
+    "app": "Gladly",
+    "category": "Support & Helpdesk",
+    "description": "Enterprise CX platform",
+    "auth_methods": [
+      "basic"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "outreach",
+    "blocker": "Basic: email + API token; user needs API User permission; enterprise contract, no self-serve signup.",
+    "evidence_urls": [
+      "https://developer.gladly.com/rest/",
+      "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 21,
+    "app": "Slack",
+    "category": "Communications",
+    "description": "Team messaging",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bot/user tokens via OAuth; free workspace; official hosted MCP GA Feb 17 2026 + skills plugin.",
+    "evidence_urls": [
+      "https://docs.slack.dev/authentication/tokens",
+      "https://docs.slack.dev/ai/slack-mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 22,
+    "app": "Twilio",
+    "category": "Communications",
+    "description": "SMS/voice/comms APIs",
+    "auth_methods": [
+      "basic",
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Account SID + Auth Token (Basic) or API Key SID/secret; free trial credit.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/iam/api/authtoken",
+      "https://www.twilio.com/docs/iam/api-keys"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 23,
+    "app": "Zoho Cliq",
+    "category": "Communications",
+    "description": "Team chat",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "OAuth2 via Zoho API console; free tier.",
+    "evidence_urls": [
+      "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+      "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 24,
+    "app": "Lark",
+    "category": "Communications",
+    "description": "Collaboration suite (Feishu intl.)",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Custom app: app_id+secret -> tenant_access_token; user_access_token via OAuth; free dev org.",
+    "evidence_urls": [
+      "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/access-credentials",
+      "https://open.larkoffice.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/tenant_access_token"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 25,
+    "app": "Pumble",
+    "category": "Communications",
+    "description": "Team chat",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "API Keys addon available on ALL plans; Owner/Admin/Member; Swagger docs; 1000 req/min.",
+    "evidence_urls": [
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 26,
+    "app": "Discord",
+    "category": "Communications",
+    "description": "Community chat/voice",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Bot token from Developer Portal; OAuth2 for user apps; free.",
+    "evidence_urls": [
+      "https://docs.discord.com/developers/reference",
+      "https://docs.discord.com/developers/topics/oauth2"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 27,
+    "app": "Telegram",
+    "category": "Communications",
+    "description": "Messaging platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Bot token from @BotFather; HTTP Bot API; free. (MTProto user API separate.)",
+    "evidence_urls": [
+      "https://core.telegram.org/bots/api",
+      "https://core.telegram.org/bots/tutorial"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 28,
+    "app": "WhatsApp Business",
+    "category": "Communications",
+    "description": "Business messaging Cloud API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Meta app user/system-user tokens; free test number; production needs business verification + app review.",
+    "evidence_urls": [
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 29,
+    "app": "Aircall",
+    "category": "Communications",
+    "description": "Cloud phone system",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "caveats",
+    "blocker": "api_id/api_token (Basic) created in company settings by customer; OAuth for public integrations.",
+    "evidence_urls": [
+      "https://developer.aircall.io/docs/basic-authentication",
+      "https://developer.aircall.io/docs/oauth"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 30,
+    "app": "Vonage",
+    "category": "Communications",
+    "description": "SMS/voice/video APIs",
+    "auth_methods": [
+      "api_key",
+      "jwt_keypair"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "API key+secret (Basic) or JWT signed with application private key; free trial credit.",
+    "evidence_urls": [
+      "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "https://developer.vonage.com/en/verify/concepts/authentication"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 31,
+    "app": "Google Ads",
+    "category": "Marketing & Ads",
+    "description": "Ads platform API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Developer token + OAuth; since Sep 9 2026 access granted per Cloud project; Test/Explorer/Basic/Standard tiers; production approval.",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "https://developers.google.com/google-ads/api/docs/get-started/make-first-call"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 32,
+    "app": "Meta Ads",
+    "category": "Marketing & Ads",
+    "description": "Ads platform (Marketing API)",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "System-user tokens; dev mode self-serve; 'Marketing API Access Tier' review (500 calls/15d threshold since May 2026).",
+    "evidence_urls": [
+      "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+      "https://developers.meta.com/blog/updates-to-ads-management-standard-access-feature/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 33,
+    "app": "LinkedIn Ads",
+    "category": "Marketing & Ads",
+    "description": "Ads / Community Management API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "none",
+    "buildability": "outreach",
+    "blocker": "3-legged OAuth; all apps start Development tier after application approval; Standard tier at LinkedIn's discretion.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+      "https://developer.linkedin.com/product-catalog/marketing/community-management-api"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 34,
+    "app": "GoHighLevel",
+    "category": "Marketing & Ads",
+    "description": "Agency CRM/marketing platform",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "OAuth2 marketplace apps or Private Integration Tokens; paid agency account (14-day trial).",
+    "evidence_urls": [
+      "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+      "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 35,
+    "app": "Mailchimp",
+    "category": "Marketing & Ads",
+    "description": "Email marketing",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "API key (Basic) or OAuth2 (PKCE required); free plan.",
+    "evidence_urls": [
+      "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+      "https://mailchimp.com/developer/marketing/api-concepts/api-structure"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 36,
+    "app": "Klaviyo",
+    "category": "Marketing & Ads",
+    "description": "Ecommerce email/SMS marketing",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Private API key (scoped) or OAuth; free tier.",
+    "evidence_urls": [
+      "https://developers.klaviyo.com/en/docs/authenticate_",
+      "https://help.klaviyo.com/hc/en-us/articles/7423954176283"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 37,
+    "app": "systeme.io",
+    "category": "Marketing & Ads",
+    "description": "Funnels, email, courses builder",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Public API key in Settings > MCP & API keys (max 3); MCP offered; free plan.",
+    "evidence_urls": [
+      "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 38,
+    "app": "Pinterest",
+    "category": "Marketing & Ads",
+    "description": "Visual discovery / ads API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Trial access after app approval (mostly reads); Standard access (writes) via app review.",
+    "evidence_urls": [
+      "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+      "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 39,
+    "app": "Threads",
+    "category": "Marketing & Ads",
+    "description": "Social posting API (Meta)",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "Threads user access tokens (OAuth2); app review for public permissions; dev self-serve with app roles.",
+    "evidence_urls": [
+      "https://developers.facebook.com/documentation/threads/get-started",
+      "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 40,
+    "app": "SendGrid",
+    "category": "Marketing & Ads",
+    "description": "Email delivery API (Twilio)",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Scoped API keys (Bearer); free tier 100 emails/day.",
+    "evidence_urls": [
+      "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+      "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 41,
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "description": "Commerce platform",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "GraphQL Admin API first (X-Shopify-Access-Token); custom-app token from admin; free Partner dev store; Dev MCP.",
+    "evidence_urls": [
+      "https://shopify.dev/docs/api/usage/authentication",
+      "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 42,
+    "app": "WooCommerce",
+    "category": "Ecommerce",
+    "description": "WordPress commerce plugin",
+    "auth_methods": [
+      "basic"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Consumer key/secret as Basic auth over HTTPS; self-hosted, free plugin.",
+    "evidence_urls": [
+      "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "https://developer.woocommerce.com/docs/apis/rest-api/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 43,
+    "app": "BigCommerce",
+    "category": "Ecommerce",
+    "description": "Commerce platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Store-level API account -> X-Auth-Token; OAuth for marketplace apps; trial store.",
+    "evidence_urls": [
+      "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "https://www.bigcommerce.com/blog/developers-b2b-unified-api/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 44,
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "description": "Enterprise B2C commerce",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "none",
+    "buildability": "outreach",
+    "blocker": "SCAPI via Account Manager API client (client credentials) + SLAS; OCAPI deprecated; requires paid B2C Commerce instance.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 45,
+    "app": "Magento / Adobe Commerce",
+    "category": "Ecommerce",
+    "description": "Commerce platform (OSS + Adobe)",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Integration Bearer tokens; OAuth 1.0a for 3rd-party apps; Adobe IMS OAuth for SaaS; Magento Open Source self-host free.",
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "https://developer.adobe.com/commerce/webapi/rest/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 46,
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "description": "Websites + commerce",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "API keys self-serve; OAuth via Extensions (new self-serve app process); API availability plan-dependent (Commerce Advanced for some).",
+    "evidence_urls": [
+      "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 47,
+    "app": "Ecwid",
+    "category": "Ecommerce",
+    "description": "Embeddable commerce (Lightspeed)",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "caveats",
+    "blocker": "OAuth2 apps; custom-app secret_token; API access tied to paid plans (verify tier).",
+    "evidence_urls": [
+      "https://docs.ecwid.com/api-reference",
+      "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": true,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 48,
+    "app": "Gumroad",
+    "category": "Ecommerce",
+    "description": "Digital products marketplace",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "Create app -> access token (non-expiring); OAuth2 for multi-user; free account.",
+    "evidence_urls": [
+      "https://gumroad.com/help/article/280-create-application-api",
+      "https://apis.io/providers/gumroad/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 49,
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "description": "Seller marketplace API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "outreach",
+    "blocker": "Login with Amazon OAuth + developer registration/identity verification, role requests; reviews can take weeks; sandbox exists.",
+    "evidence_urls": [
+      "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications",
+      "https://developer.amazonservices.com/register"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 50,
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "description": "Creator monetization (now Commas)",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "none",
+    "buildability": "outreach",
+    "blocker": "API key under Account > API Keys (per Tarvent); official API docs are password-protected; vendor folded into Commas.",
+    "evidence_urls": [
+      "https://dev-docs.fanbasis.com/",
+      "https://www.tarvent.com/integrations/fanbasis"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": true,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 51,
+    "app": "DataForSEO",
+    "category": "Data & SEO",
+    "description": "SEO/SERP data APIs",
+    "auth_methods": [
+      "basic"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "unknown",
+    "buildability": "now",
+    "blocker": "Basic auth only (API login + password); free account with trial credit.",
+    "evidence_urls": [
+      "https://docs.dataforseo.com/v3/auth/",
+      "https://composio.dev/content/how-to-get-a-dataforseo-api-key-step-by-step-guide"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 52,
+    "app": "SE Ranking",
+    "category": "Data & SEO",
+    "description": "SEO platform + data API",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "caveats",
+    "blocker": "API included in paid plans (Core/Growth) with monthly credits; standalone API from $2,148/yr; trial testable.",
+    "evidence_urls": [
+      "https://seranking.com/api/how-to-get-api/",
+      "https://seranking.com/api.html"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 53,
+    "app": "Ahrefs",
+    "category": "Data & SEO",
+    "description": "SEO data platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "unknown",
+    "buildability": "caveats",
+    "blocker": "Bearer key (owner/admin); API v3 on eligible paid plans (expanded beyond Enterprise late 2025); free test queries on other plans; 60 req/min.",
+    "evidence_urls": [
+      "https://docs.ahrefs.com/en/api/docs/introduction",
+      "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 54,
+    "app": "MrScraper",
+    "category": "Data & SEO",
+    "description": "AI web-scraping API",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bearer API key; free start, no card; MCP integration advertised.",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/docs/api/overview",
+      "https://mrscraper.com/"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 55,
+    "app": "Apify",
+    "category": "Data & SEO",
+    "description": "Scraping/automation actor platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "API token from Console; free tier; hosted MCP (OAuth or token) turns 5k+ actors into tools.",
+    "evidence_urls": [
+      "https://docs.apify.com/api/v2",
+      "https://docs.apify.com/mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 56,
+    "app": "Firecrawl",
+    "category": "Data & SEO",
+    "description": "Scraping/crawl for LLMs",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bearer API key; free credits; official MCP server.",
+    "evidence_urls": [
+      "https://docs.firecrawl.dev/introduction",
+      "https://github.com/firecrawl/firecrawl-mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 57,
+    "app": "Bright Data",
+    "category": "Data & SEO",
+    "description": "Proxy + web-data platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "API key (Bearer); zones for proxy auth; trial; hosted MCP with Agent API keys.",
+    "evidence_urls": [
+      "https://docs.brightdata.com/api-reference/authentication",
+      "https://github.com/brightdata/brightdata-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 58,
+    "app": "Sherlock",
+    "category": "Data & SEO",
+    "description": "OSINT username search (OSS CLI)",
+    "auth_methods": [
+      "none"
+    ],
+    "credential_access": "local",
+    "api_type": "local",
+    "api_breadth": "n/a",
+    "mcp_status": "community",
+    "buildability": "local",
+    "blocker": "No SaaS/auth: Python CLI across 400+ sites; wrap as local skill or use community Apify actor.",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock",
+      "https://bellingcat.gitbook.io/toolkit/more/all-tools/sherlock"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 59,
+    "app": "Waterfall.io",
+    "category": "Data & SEO",
+    "description": "B2B waterfall enrichment (30+ vendors)",
+    "auth_methods": [
+      "unknown"
+    ],
+    "credential_access": "partner",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "mcp_status": "unknown",
+    "buildability": "outreach",
+    "blocker": "Product page links 'API Documentation' but no public auth/pricing details; contact-sales motion; UNRESOLVED - human follow-up.",
+    "evidence_urls": [
+      "https://www.waterfall.io/product/prospector",
+      "https://www.salesforge.ai/sales-tools-categories/data-enrichment-tools"
+    ],
+    "confidence": "low",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": true,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 60,
+    "app": "Clay",
+    "category": "Data & SEO",
+    "description": "GTM data-enrichment workspace",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "Public API api.clay.com/public/v0 (clay-api-key, 13 ops, OpenAPI 3.1); docs say all plans incl free, pricing FAQ says Enterprise - conflict; tables read-only; MCP + CLI.",
+    "evidence_urls": [
+      "https://enrow.io/en/blog/clay-api-integrations",
+      "https://university.clay.com/docs/http-api-integration-overview"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": true,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 61,
+    "app": "GitHub",
+    "category": "Dev & Infra",
+    "description": "Code hosting / dev platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Fine-grained PATs, OAuth apps, GitHub Apps (recommended); free; official MCP server.",
+    "evidence_urls": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://github.com/github/github-mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 62,
+    "app": "Vercel",
+    "category": "Dev & Infra",
+    "description": "Frontend deploy platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bearer access tokens (account/team/project scoped); Sign in with Vercel OAuth; free Hobby; mcp.vercel.com.",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 63,
+    "app": "Netlify",
+    "category": "Dev & Infra",
+    "description": "Web deploy platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Personal access token or OAuth2; free tier; official netlify-mcp.",
+    "evidence_urls": [
+      "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "https://github.com/netlify/netlify-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 64,
+    "app": "Cloudflare",
+    "category": "Dev & Infra",
+    "description": "Edge/network/security platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Scoped API tokens (user/account); legacy Global API key; free plan; official MCP servers.",
+    "evidence_urls": [
+      "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "https://developers.cloudflare.com/api/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 65,
+    "app": "Supabase",
+    "category": "Dev & Infra",
+    "description": "Managed Postgres platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "PAT for Management API (now scopable); publishable/secret project keys (legacy anon/service_role retiring); official MCP.",
+    "evidence_urls": [
+      "https://supabase.com/docs/reference/api/introduction",
+      "https://supabase.com/docs/guides/platform/personal-access-tokens"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 66,
+    "app": "Neo4j",
+    "category": "Dev & Infra",
+    "description": "Graph database (Aura + self-host)",
+    "auth_methods": [
+      "oauth2",
+      "basic"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Aura API OAuth2 client-credentials (all tiers incl Free); Query API Basic/bearer; official Neo4j MCP.",
+    "evidence_urls": [
+      "https://neo4j.com/docs/aura/api/authentication/",
+      "https://neo4j.com/docs/http-api/current/authentication-authorization/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 67,
+    "app": "Snowflake",
+    "category": "Dev & Infra",
+    "description": "Cloud data warehouse",
+    "auth_methods": [
+      "jwt_keypair",
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "Key-pair JWT, OAuth, PAT, workload identity; SQL API + object REST APIs; 30-day trial; account-bound; managed MCP server.",
+    "evidence_urls": [
+      "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "category": "Dev & Infra",
+    "description": "Managed MongoDB",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Service accounts (OAuth2 client-credentials) recommended; legacy Digest API keys; free M0; official MongoDB MCP.",
+    "evidence_urls": [
+      "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "https://www.mongodb.com/docs/atlas/configure-api-access/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 69,
+    "app": "Datadog",
+    "category": "Dev & Infra",
+    "description": "Observability platform",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "DD-API-KEY + DD-APPLICATION-KEY; Jun 2026 auth model adds targeted app-key alternatives; trial; official MCP.",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api/latest/authentication/",
+      "https://www.datadoghq.com/blog/datadog-api-authentication/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 70,
+    "app": "Sentry",
+    "category": "Dev & Infra",
+    "description": "Error monitoring",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "User/org auth tokens (Bearer), internal-integration tokens; free tier; official Sentry MCP.",
+    "evidence_urls": [
+      "https://docs.sentry.io/api/auth/",
+      "https://docs.sentry.io/account/auth-tokens/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 71,
+    "app": "Notion",
+    "category": "Productivity & PM",
+    "description": "Docs / workspace",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Internal-connection token / PAT; OAuth public integrations; free; official Notion MCP.",
+    "evidence_urls": [
+      "https://developers.notion.com/guides/authorization/overview",
+      "https://developers.notion.com/guides/connections-and-tokens/internal-connections"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 72,
+    "app": "Airtable",
+    "category": "Productivity & PM",
+    "description": "Spreadsheet-database platform",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Scoped PATs (legacy API keys retired) + OAuth; free; official hosted MCP + skills library.",
+    "evidence_urls": [
+      "https://airtable.com/developers/web/guides/personal-access-tokens",
+      "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 73,
+    "app": "Linear",
+    "category": "Productivity & PM",
+    "description": "Issue tracking",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "GraphQL",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Personal API key or OAuth2; GraphQL; free tier; official MCP (OAuth 2.1 + DCR).",
+    "evidence_urls": [
+      "https://linear.app/developers/graphql",
+      "https://linear.app/developers/oauth-2-0-authentication"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 74,
+    "app": "Jira",
+    "category": "Productivity & PM",
+    "description": "Issue tracking (Atlassian)",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "API token as Basic password; OAuth 3LO apps; free tier; Atlassian Rovo MCP.",
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 75,
+    "app": "Asana",
+    "category": "Productivity & PM",
+    "description": "Work management",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "PAT or OAuth; free Personal tier; official MCP V2 (mcp.asana.com, OAuth).",
+    "evidence_urls": [
+      "https://developers.asana.com/docs/authentication",
+      "https://developers.asana.com/docs/mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 76,
+    "app": "Monday.com",
+    "category": "Productivity & PM",
+    "description": "Work OS",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "GraphQL",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Personal API token or OAuth; GraphQL; trial; official hosted MCP.",
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/docs/authentication",
+      "https://developer.monday.com/api-reference/docs/mcp-api-token"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 77,
+    "app": "ClickUp",
+    "category": "Productivity & PM",
+    "description": "Tasks / productivity suite",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Personal token (pk_) or OAuth2; Free Forever plan; official MCP (public beta).",
+    "evidence_urls": [
+      "https://developer.clickup.com/docs/authentication",
+      "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 78,
+    "app": "Coda",
+    "category": "Productivity & PM",
+    "description": "Docs + tables (Superhuman)",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bearer API token from account settings; free tier; Superhuman Docs MCP (verify scope).",
+    "evidence_urls": [
+      "https://coda.io/developers/apis/v1",
+      "https://www.scalekit.com/blog/coda-mcp-vs-api"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 79,
+    "app": "Smartsheet",
+    "category": "Productivity & PM",
+    "description": "Work execution / sheets",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "Raw access token (UI) or OAuth 3LO; trial. Docs-site 'Install MCP' buttons are docs tooling, NOT an API MCP.",
+    "evidence_urls": [
+      "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 80,
+    "app": "Harvest",
+    "category": "Productivity & PM",
+    "description": "Time tracking",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "now",
+    "blocker": "PAT from Harvest ID Developers section or OAuth2; trial.",
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "https://help.getharvest.com/api-v2/introduction/overview/general/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 81,
+    "app": "Stripe",
+    "category": "Finance & Fintech",
+    "description": "Payments infrastructure",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Secret/restricted keys; test mode + sandboxes free; Connect OAuth for platforms; official MCP + agent toolkit.",
+    "evidence_urls": [
+      "https://docs.stripe.com/api/authentication",
+      "https://docs.stripe.com/keys"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 82,
+    "app": "Plaid",
+    "category": "Finance & Fintech",
+    "description": "Bank-account data network",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "client_id + secret (headers or body); Sandbox free immediately; production requires approval/paid.",
+    "evidence_urls": [
+      "https://plaid.com/docs/api/",
+      "https://www.apideck.com/blog/how-to-get-your-plaid-api-key"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 83,
+    "app": "Binance",
+    "category": "Finance & Fintech",
+    "description": "Crypto exchange API",
+    "auth_methods": [
+      "api_key",
+      "hmac"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "caveats",
+    "blocker": "API key + HMAC-SHA256 request signing (Ed25519 option); free; geo/compliance restrictions.",
+    "evidence_urls": [
+      "https://docs.binance.us/",
+      "https://www.binance.com/en/academy/articles/hmac-signature-what-it-is-and-how-to-use-it-for-binance-api-security"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 84,
+    "app": "Paygent Connect",
+    "category": "Finance & Fintech",
+    "description": "Payment gateway (NMI-powered)",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "none",
+    "buildability": "outreach",
+    "blocker": "NMI gateway: security-key auth (username/password being retired 2026); merchant creds via acquirer/Paygent relationship.",
+    "evidence_urls": [
+      "https://docs.nmi.com/reference/authentication",
+      "https://support.nmi.com/hc/en-gb/articles/37611045020049-Migrating-from-Username-Password-to-Security-Key-Authentication"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 85,
+    "app": "iPayX",
+    "category": "Finance & Fintech",
+    "description": "MCP-native FX fee audit engine",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Not a classic PSP: FX audit; free API key; official mcp-fx-audit server (compare_fx_sources etc.).",
+    "evidence_urls": [
+      "https://www.ipayx.ai/",
+      "https://github.com/iPAYX-Technologies/mcp-fx-audit"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "category": "Finance & Fintech",
+    "description": "SMB accounting (Intuit)",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "OAuth2; free developer sandbox companies (up to 10); production app review for some scopes.",
+    "evidence_urls": [
+      "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "https://developer.intuit.com/app/developer/qbo/docs/develop/sandboxes"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "category": "Finance & Fintech",
+    "description": "SMB accounting",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "broad",
+    "mcp_status": "community",
+    "buildability": "now",
+    "blocker": "OAuth2 app; free demo tenant for testing; trial org.",
+    "evidence_urls": [
+      "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+      "https://developer.xero.com/documentation/guides/oauth2/overview/"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 88,
+    "app": "Brex",
+    "category": "Finance & Fintech",
+    "description": "Corporate cards / spend",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "User token created by account/card admin after accepting Developer API agreement; production-only API (no sandbox); MCP admin-enabled.",
+    "evidence_urls": [
+      "https://developer.brex.com/guides/authentication",
+      "https://developer.brex.com/guides/roles_permissions_scopes"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 89,
+    "app": "Ramp",
+    "category": "Finance & Fintech",
+    "description": "Corporate cards / spend",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "OAuth2 client-credentials; admin creates app (Company > Developer); separate sandbox env creds; official mcp.ramp.com.",
+    "evidence_urls": [
+      "https://docs.ramp.com/developer-api/v1/authorization",
+      "https://support.ramp.com/accessing-the-developer-api"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "category": "Finance & Fintech",
+    "description": "Private-markets data",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "partner",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "outreach",
+    "blocker": "RESTful api.pitchbook.com; standalone contract + platform license; key/token issued by Direct Data team; Premium MCP for licensed orgs.",
+    "evidence_urls": [
+      "https://pitchbook.com/help/PitchBook-api",
+      "https://support.writer.com/articles/6782711580-pitchbook-connector"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 91,
+    "app": "NotebookLM (Gemini Notebook)",
+    "category": "AI & Media",
+    "description": "Enterprise research notebooks API",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "Gemini Notebook API REST (notebook.googleapis.com/v1), GCP OAuth; Public Preview (pre-GA); needs Gemini Enterprise subscription; official MCP. Consumer NotebookLM: no API.",
+    "evidence_urls": [
+      "https://developers.google.com/notebook/docs",
+      "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 92,
+    "app": "Otter AI",
+    "category": "AI & Media",
+    "description": "Meeting transcription / notes",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "credential_access": "free",
+    "api_type": "none",
+    "api_breadth": "n/a",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "No public REST API / API key; official MCP (mcp.otter.ai) OAuth via Claude/ChatGPT directories; custom apps need Otter Support.",
+    "evidence_urls": [
+      "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 93,
+    "app": "Fathom",
+    "category": "AI & Media",
+    "description": "AI meeting notetaker",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Public API (Nov 2025): user-scoped API key; free individual plan; webhooks + official MCP.",
+    "evidence_urls": [
+      "https://developers.fathom.ai/",
+      "https://help.fathom.video/en/articles/8368641"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 94,
+    "app": "Consensus",
+    "category": "AI & Media",
+    "description": "Academic paper search engine",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "credential_access": "free",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Official MCP (mcp.consensus.app) OAuth or API key; search works without account; REST API for pipelines; paid for full text.",
+    "evidence_urls": [
+      "https://docs.consensus.app/consensus-mcp",
+      "https://github.com/Consensus-NLP/consensus-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 95,
+    "app": "Reducto",
+    "category": "AI & Media",
+    "description": "Agentic document parsing",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Bearer API key from Studio; free credits; parse/extract/split/edit; MCP offered via connectors.",
+    "evidence_urls": [
+      "https://docs.reducto.ai/quickstart",
+      "https://docs.reducto.ai/api-reference/parse"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 96,
+    "app": "Devin",
+    "category": "AI & Media",
+    "description": "Autonomous software engineer",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "Principal+token model: service-user keys + PATs; paid Devin plan; official Devin MCP (same auth); DeepWiki MCP free.",
+    "evidence_urls": [
+      "https://docs.devin.ai/api-reference/authentication",
+      "https://docs.devin.ai/work-with-devin/devin-mcp"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 97,
+    "app": "Higgsfield",
+    "category": "AI & Media",
+    "description": "AI image/video generation suite",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "medium",
+    "mcp_status": "official",
+    "buildability": "now",
+    "blocker": "Server-side API creds (async request lifecycle); credit-based; official MCP + agent CLI (40+ models).",
+    "evidence_urls": [
+      "https://docs.higgsfield.ai/",
+      "https://higgsfield.ai/cli",
+      "https://higgsfield.ai/mcp"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 98,
+    "app": "Mermaid CLI",
+    "category": "AI & Media",
+    "description": "Diagram renderer (OSS CLI)",
+    "auth_methods": [
+      "none"
+    ],
+    "credential_access": "local",
+    "api_type": "local",
+    "api_breadth": "n/a",
+    "mcp_status": "community",
+    "buildability": "local",
+    "blocker": "npm mmdc renders .mmd -> SVG/PNG/PDF locally; MIT; no auth; wrap as local skill/tool.",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli",
+      "https://formulae.brew.sh/formula/mermaid-cli"
+    ],
+    "confidence": "high",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 99,
+    "app": "TranscriptAPI",
+    "category": "AI & Media",
+    "description": "YouTube transcript/search API",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "trial",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "unknown",
+    "buildability": "now",
+    "blocker": "API key from dashboard; credit-based (failed calls free); free tier; MCP mentioned in vendor comparisons (unverified).",
+    "evidence_urls": [
+      "https://transcriptapi.com/docs/api/",
+      "https://transcriptapi.com/"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "search",
+    "human_review_flag": false,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  },
+  {
+    "id": 100,
+    "app": "Grain",
+    "category": "AI & Media",
+    "description": "Meeting recording / notes",
+    "auth_methods": [
+      "api_key"
+    ],
+    "credential_access": "paid",
+    "api_type": "REST",
+    "api_breadth": "narrow",
+    "mcp_status": "official",
+    "buildability": "caveats",
+    "blocker": "PAT (grain_pat_) from Settings > Integrations > API; Public-Api-Version header; plan gate reported but unconfirmed; Grain MCP exists.",
+    "evidence_urls": [
+      "https://developers.grain.com/",
+      "https://www.scalekit.com/blog/grain-mcp-vs-api"
+    ],
+    "confidence": "med",
+    "evidence_capture_mode": "extracted",
+    "human_review_flag": true,
+    "provenance": {
+      "source": "Qwen transcript supplied by user",
+      "claim_status": "transcript-extracted; not fully independently verified in this run"
+    }
+  }
+]
