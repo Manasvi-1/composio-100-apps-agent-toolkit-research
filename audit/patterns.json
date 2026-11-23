@@ -1,5 +1,5 @@
 {
-  "provenance": "Counts recalculated from the committed normalized dataset after seven field-level official-doc corrections/additions. Baseline records are transcript-extracted; the targeted corrected fields are first-party crosschecked. Not prevalence estimates for all Composio integrations.",
+  "provenance": "Counts recalculated from normalized transcript baseline plus 13-app source review corrections/refinements (see audit/sample_review.json). Not prevalence estimates for the entire Composio catalog.",
   "sample_size": 100,
   "categories": {
     "CRM & Sales": 10,
@@ -14,42 +14,40 @@
     "AI & Media": 10
   },
   "auth_method_mentions": {
-    "oauth2": 60,
-    "api_key": 67,
+    "oauth2": 62,
+    "api_key": 68,
     "basic": 9,
     "jwt_keypair": 2,
     "none": 2,
-    "unknown": 1,
     "token": 1,
     "workload_identity_federation": 1,
     "hmac": 1
   },
   "credential_access_labels": {
-    "free": 46,
+    "free": 48,
     "trial": 33,
     "admin": 7,
-    "partner": 6,
-    "paid": 6,
+    "partner": 5,
+    "paid": 5,
     "local": 2
   },
   "api_type_labels": {
-    "REST": 89,
+    "REST": 90,
     "REST+GraphQL": 4,
     "GraphQL": 3,
     "local": 2,
-    "unknown": 1,
     "none": 1
   },
   "mcp_status_labels": {
-    "official": 47,
+    "official": 48,
     "community": 34,
     "none": 15,
-    "unknown": 4
+    "unknown": 3
   },
   "buildability_labels": {
-    "now": 67,
-    "caveats": 24,
-    "outreach": 7,
+    "now": 69,
+    "caveats": 23,
+    "outreach": 6,
     "local": 2
   },
   "review_queue": [
@@ -122,9 +120,9 @@
   "category_summary": {
     "AI & Media": {
       "n": 10,
-      "self_serve_free_trial": 5,
-      "paid_admin_partner": 4,
-      "official_mcp_label": 8,
+      "self_serve_free_trial": 6,
+      "paid_admin_partner": 3,
+      "official_mcp_label": 9,
       "build_now_label": 9
     },
     "CRM & Sales": {
@@ -157,10 +155,10 @@
     },
     "Ecommerce": {
       "n": 10,
-      "self_serve_free_trial": 6,
-      "paid_admin_partner": 4,
+      "self_serve_free_trial": 7,
+      "paid_admin_partner": 3,
       "official_mcp_label": 2,
-      "build_now_label": 7
+      "build_now_label": 8
     },
     "Finance & Fintech": {
       "n": 10,
@@ -198,6 +196,13 @@
     "Brex: added OAuth2 as official MCP auth alongside admin API token",
     "Salesforce: added official hosted MCP connection evidence",
     "Snowflake: added PAT/token and workload identity auth evidence",
-    "Neo4j Aura: added official hosted MCP source and per-instance/enablement caveat"
+    "Neo4j Aura: added official hosted MCP source and per-instance/enablement caveat",
+    "Fanbasis: rebranded/updated to Commas public API, self-serve keys and sandbox; API access no longer treated as documentation-gated.",
+    "Waterfall: official docs now establish API key + REST and vendor approval gate; no official MCP evidence located.",
+    "Ecwid: paid-store requirement confirmed; developer can create custom app/store token.",
+    "Clay: official docs establish Public API availability across Free/Trial/paid plans with usage limits.",
+    "TranscriptAPI: official hosted MCP and OAuth/API-key auth; 100 free credits.",
+    "Grain: personal PAT is free on all plans; workspace token has admin/Business/Enterprise gate; official MCP confirmed.",
+    "Higgsfield: API Key ID+secret/pay-as-you-go distinct from account MCP, which uses OAuth and plan credits."
   ]
 }
