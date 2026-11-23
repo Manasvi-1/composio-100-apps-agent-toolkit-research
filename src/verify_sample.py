@@ -21,7 +21,7 @@ for rec in records:
         status=check.get("source_review_status","other")
         counts[status if status in counts else "other"]+=1
         for url in check.get("evidence_urls",[]):
-            if not isinstance(url,str) or not re.match(r"^https://\\S+$",url): errors.append(f"invalid review evidence URL: {url}")
+            if not isinstance(url,str) or not url.startswith("https://") or " " in url: errors.append(f"invalid review evidence URL: {url}")
 summary=review.get("summary",{})
 reported={"confirmed":summary.get("first_pass_supported"),"corrected":summary.get("first_pass_corrected"),"not_established":summary.get("not_established_or_unscored")}
 for k,v in reported.items():
@@ -35,5 +35,5 @@ print("audit arithmetic: PASS" if not errors else "audit arithmetic: FAIL")
 for e in errors: print("ERROR:",e)
 if "--write" in sys.argv:
     out={"source_file":"audit/sample_review.json","reviewed_apps":len(records),"field_claims":sum(counts.values()),"first_pass_supported":counts["confirmed"],"first_pass_corrected":counts["corrected"],"not_established":counts["not_established"],"source_resolvable_claims":resolved,"first_pass_agreement":counts["confirmed"]/resolved if resolved else None,"post_correction_source_alignment":1.0 if resolved else None,"interpretation":"Selected 13-app assistant-assisted source review; not independent human/statistical accuracy.","validation":"passed" if not errors else "failed"}
-    (R/"audit/verification_summary.json").write_text(json.dumps(out,indent=2)+"\\n",encoding="utf-8")
+    (R/"audit/verification_summary.json").write_text(json.dumps(out,indent=2)+chr(10),encoding="utf-8")
 sys.exit(bool(errors))
