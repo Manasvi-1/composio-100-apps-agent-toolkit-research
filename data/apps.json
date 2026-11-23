@@ -12,17 +12,18 @@
     "api_breadth": "broad",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Spring '26: new connected apps restricted; use External Client Apps. Free Developer Edition org has API access.",
+    "blocker": "Developer Edition is free for testing; REST OAuth uses External Client Apps (new Connected App creation restricted from Spring '26); hosted MCP also requires an ECA for client OAuth.",
     "evidence_urls": [
       "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
-      "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html"
+      "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/client-connection-overview.html"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; official hosted MCP connection flow independently checked"
     }
   },
   {
@@ -245,22 +246,24 @@
     "auth_methods": [
       "oauth2"
     ],
-    "credential_access": "partner",
+    "credential_access": "admin",
     "api_type": "REST",
     "api_breadth": "medium",
     "mcp_status": "official",
-    "buildability": "outreach",
-    "blocker": "OAuth2 client-credentials; client_id/apiKey issued to enterprise clients by admin; official MCP also OAuth.",
+    "buildability": "caveats",
+    "blocker": "Enterprise tenant/Celeste entitlement plus admin-issued OAuth client credentials; official MCP is tenant-scoped and permissioned. Evidence does not establish a universal partner-only gate.",
     "evidence_urls": [
       "https://api.docs.dealcloud.com/docs/token",
-      "https://api.docs.dealcloud.com/mcp/authentication"
+      "https://api.docs.dealcloud.com/mcp/authentication",
+      "https://api.docs.dealcloud.com/mcp/getting-started"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; corrected after first-party documentation review",
+      "correction": "credential_access partner -> admin; buildability outreach -> caveats. Evidence supports enterprise license and tenant/admin permission, not universal partner-only access."
     }
   },
   {
@@ -380,18 +383,20 @@
     "credential_access": "admin",
     "api_type": "REST",
     "api_breadth": "medium",
-    "mcp_status": "community",
+    "mcp_status": "official",
     "buildability": "caveats",
-    "blocker": "Only Admin users can create API tokens; paid B2B product, no self-serve dev tier; SDKs + CLI.",
+    "blocker": "API tokens are created by a user with token-management permission; official remote MCP supports OAuth or API token, with MCP Access and tool-level roles/plan checks.",
     "evidence_urls": [
-      "https://docs.usepylon.com/pylon-docs/developer/api"
+      "https://docs.usepylon.com/pylon-docs/developer/api",
+      "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; MCP status upgraded after first-party documentation review",
+      "correction": "community MCP label -> official Pylon-hosted MCP documented by Pylon."
     }
   },
   {
@@ -850,22 +855,24 @@
     "auth_methods": [
       "oauth2"
     ],
-    "credential_access": "partner",
+    "credential_access": "admin",
     "api_type": "REST",
     "api_breadth": "broad",
     "mcp_status": "none",
-    "buildability": "outreach",
-    "blocker": "3-legged OAuth; all apps start Development tier after application approval; Standard tier at LinkedIn's discretion.",
+    "buildability": "caveats",
+    "blocker": "Marketing API access requires developer application approval; Development tier is provisioned after approval, while Standard and restricted products require additional review. Not a blanket partner-only gate.",
     "evidence_urls": [
       "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
-      "https://developer.linkedin.com/product-catalog/marketing/community-management-api"
+      "https://developer.linkedin.com/product-catalog/marketing/community-management-api",
+      "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-04"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; corrected after first-party access-tier review",
+      "correction": "partner gate label narrowed to application/access approval; partner qualification applies to certain restricted products, not every Marketing API"
     }
   },
   {
@@ -1725,17 +1732,18 @@
     "api_breadth": "medium",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Aura API OAuth2 client-credentials (all tiers incl Free); Query API Basic/bearer; official Neo4j MCP.",
+    "blocker": "Aura REST API uses OAuth2 client credentials; client ID/secret are self-created on all tiers. Official Aura MCP requires enabling tool authentication and a per-instance endpoint; query API auth differs.",
     "evidence_urls": [
       "https://neo4j.com/docs/aura/api/authentication/",
-      "https://neo4j.com/docs/http-api/current/authentication-authorization/"
+      "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+      "https://neo4j.com/docs/mcp/current/mcp-for-aura/"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; official Aura MCP and API auth scope verified"
     }
   },
   {
@@ -1746,7 +1754,9 @@
     "auth_methods": [
       "jwt_keypair",
       "oauth2",
-      "api_key"
+      "api_key",
+      "token",
+      "workload_identity_federation"
     ],
     "credential_access": "trial",
     "api_type": "REST",
@@ -1763,7 +1773,7 @@
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; REST auth and managed MCP source checks expanded"
     }
   },
   {
@@ -2304,24 +2314,27 @@
     "category": "Finance & Fintech",
     "description": "Corporate cards / spend",
     "auth_methods": [
-      "api_key"
+      "api_key",
+      "oauth2"
     ],
     "credential_access": "admin",
     "api_type": "REST",
     "api_breadth": "medium",
     "mcp_status": "official",
     "buildability": "caveats",
-    "blocker": "User token created by account/card admin after accepting Developer API agreement; production-only API (no sandbox); MCP admin-enabled.",
+    "blocker": "Developer API token requires account/card admin and Developer API agreement; official beta MCP supports user OAuth or admin-provisioned token, with account capability permissions.",
     "evidence_urls": [
       "https://developer.brex.com/guides/authentication",
-      "https://developer.brex.com/guides/roles_permissions_scopes"
+      "https://developer.brex.com/guides/roles_permissions_scopes",
+      "https://developer.brex.com/docs/mcp"
     ],
     "confidence": "high",
     "evidence_capture_mode": "extracted",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; auth surface expanded after first-party MCP documentation review",
+      "correction": "MCP adds OAuth 2.0 alongside token auth; API token remains admin-provisioned."
     }
   },
   {
