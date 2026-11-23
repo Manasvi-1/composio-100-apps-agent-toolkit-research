@@ -1,0 +1,192 @@
+{
+  "provenance": "Counts derived from Qwen transcript-extracted labels; not independently verified prevalence or current catalog truth.",
+  "sample_size": 100,
+  "categories": {
+    "CRM & Sales": 10,
+    "Support & Helpdesk": 10,
+    "Communications": 10,
+    "Marketing & Ads": 10,
+    "Ecommerce": 10,
+    "Data & SEO": 10,
+    "Dev & Infra": 10,
+    "Productivity & PM": 10,
+    "Finance & Fintech": 10,
+    "AI & Media": 10
+  },
+  "auth_method_mentions": {
+    "oauth2": 59,
+    "api_key": 67,
+    "basic": 9,
+    "jwt_keypair": 2,
+    "none": 2,
+    "unknown": 1,
+    "hmac": 1
+  },
+  "credential_access_labels": {
+    "free": 46,
+    "trial": 33,
+    "partner": 8,
+    "admin": 5,
+    "paid": 6,
+    "local": 2
+  },
+  "api_type_labels": {
+    "REST": 89,
+    "REST+GraphQL": 4,
+    "GraphQL": 3,
+    "local": 2,
+    "unknown": 1,
+    "none": 1
+  },
+  "mcp_status_labels": {
+    "official": 46,
+    "community": 35,
+    "none": 15,
+    "unknown": 4
+  },
+  "buildability_labels": {
+    "now": 67,
+    "caveats": 22,
+    "outreach": 9,
+    "local": 2
+  },
+  "review_queue": [
+    {
+      "app": "Podio",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Copper",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Ecwid",
+      "confidence": "med",
+      "flagged": true
+    },
+    {
+      "app": "fanbasis",
+      "confidence": "med",
+      "flagged": true
+    },
+    {
+      "app": "MrScraper",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Waterfall.io",
+      "confidence": "low",
+      "flagged": true
+    },
+    {
+      "app": "Clay",
+      "confidence": "med",
+      "flagged": true
+    },
+    {
+      "app": "Coda",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Paygent Connect",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "iPayX",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Higgsfield",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "TranscriptAPI",
+      "confidence": "med",
+      "flagged": false
+    },
+    {
+      "app": "Grain",
+      "confidence": "med",
+      "flagged": true
+    }
+  ],
+  "category_summary": {
+    "AI & Media": {
+      "n": 10,
+      "self_serve_free_trial": 5,
+      "paid_admin_partner": 4,
+      "official_mcp_label": 8,
+      "build_now_label": 5
+    },
+    "CRM & Sales": {
+      "n": 10,
+      "self_serve_free_trial": 9,
+      "paid_admin_partner": 1,
+      "official_mcp_label": 4,
+      "build_now_label": 8
+    },
+    "Communications": {
+      "n": 10,
+      "self_serve_free_trial": 9,
+      "paid_admin_partner": 1,
+      "official_mcp_label": 1,
+      "build_now_label": 8
+    },
+    "Data & SEO": {
+      "n": 10,
+      "self_serve_free_trial": 7,
+      "paid_admin_partner": 2,
+      "official_mcp_label": 5,
+      "build_now_label": 5
+    },
+    "Dev & Infra": {
+      "n": 10,
+      "self_serve_free_trial": 10,
+      "paid_admin_partner": 0,
+      "official_mcp_label": 10,
+      "build_now_label": 9
+    },
+    "Ecommerce": {
+      "n": 10,
+      "self_serve_free_trial": 6,
+      "paid_admin_partner": 4,
+      "official_mcp_label": 2,
+      "build_now_label": 5
+    },
+    "Finance & Fintech": {
+      "n": 10,
+      "self_serve_free_trial": 6,
+      "paid_admin_partner": 4,
+      "official_mcp_label": 5,
+      "build_now_label": 5
+    },
+    "Marketing & Ads": {
+      "n": 10,
+      "self_serve_free_trial": 9,
+      "paid_admin_partner": 1,
+      "official_mcp_label": 1,
+      "build_now_label": 4
+    },
+    "Productivity & PM": {
+      "n": 10,
+      "self_serve_free_trial": 10,
+      "paid_admin_partner": 0,
+      "official_mcp_label": 8,
+      "build_now_label": 10
+    },
+    "Support & Helpdesk": {
+      "n": 10,
+      "self_serve_free_trial": 8,
+      "paid_admin_partner": 2,
+      "official_mcp_label": 2,
+      "build_now_label": 8
+    }
+  }
+}
