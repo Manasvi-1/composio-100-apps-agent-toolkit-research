@@ -1,0 +1,153 @@
+{
+  "source": "Qwen transcript supplied by user; original blind prior before retrieval",
+  "recorded_at_utc": "2026-11-23T14:41:15.656809Z",
+  "n_apps": 20,
+  "sha256": "4571ce6394e5d2c20a910e2209d93d73eb977799ced596ade1774513fc6a3811",
+  "excluded_hint_fields": [
+    "Otter AI.mcp",
+    "Consensus.auth",
+    "Consensus.mcp"
+  ],
+  "priors": {
+    "Salesforce": {
+      "auth": "OAuth2",
+      "access": "self_serve_free",
+      "api": "REST",
+      "mcp": "community",
+      "verdict": "build_now"
+    },
+    "Attio": {
+      "auth": "OAuth2+API key",
+      "access": "self_serve_free",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_now"
+    },
+    "DealCloud": {
+      "auth": "OAuth2",
+      "access": "partner_gated",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "outreach"
+    },
+    "Pylon": {
+      "auth": "API key",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "Plain": {
+      "auth": "API key",
+      "access": "trial",
+      "api": "GraphQL",
+      "mcp": "none",
+      "verdict": "build_now"
+    },
+    "Pumble": {
+      "auth": "API key",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "LinkedIn Ads": {
+      "auth": "OAuth2",
+      "access": "partner_gated",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "outreach"
+    },
+    "systeme.io": {
+      "auth": "API key",
+      "access": "self_serve_free",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_now"
+    },
+    "Ahrefs": {
+      "auth": "API key",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "Waterfall.io": {
+      "auth": "unknown",
+      "access": "unknown",
+      "api": "unknown",
+      "mcp": "none",
+      "verdict": "unknown"
+    },
+    "Clay": {
+      "auth": "API key",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "Neo4j": {
+      "auth": "OAuth2+Basic",
+      "access": "self_serve_free",
+      "api": "REST",
+      "mcp": "community",
+      "verdict": "build_now"
+    },
+    "Snowflake": {
+      "auth": "JWT key-pair+OAuth",
+      "access": "trial",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "Smartsheet": {
+      "auth": "OAuth2+API key",
+      "access": "trial",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_now"
+    },
+    "Brex": {
+      "auth": "API key",
+      "access": "admin_approval",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    },
+    "PitchBook": {
+      "auth": "unknown",
+      "access": "partner_gated",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "outreach"
+    },
+    "NotebookLM": {
+      "auth": "OAuth2",
+      "access": "partner_gated",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "outreach"
+    },
+    "Otter AI": {
+      "auth": "OAuth2",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "hint",
+      "verdict": "build_caveats"
+    },
+    "Consensus": {
+      "auth": "hint",
+      "access": "self_serve_free",
+      "api": "REST",
+      "mcp": "hint",
+      "verdict": "build_caveats"
+    },
+    "Grain": {
+      "auth": "API key",
+      "access": "paid_plan",
+      "api": "REST",
+      "mcp": "none",
+      "verdict": "build_caveats"
+    }
+  }
+}
