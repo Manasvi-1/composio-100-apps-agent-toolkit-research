@@ -1,0 +1,16 @@
+{
+  "source": "Qwen transcript supplied by user",
+  "sample_size_apps": 20,
+  "prior_recorded_at_utc": "2026-11-23T14:41:15.656809Z",
+  "prior_sha256": "4571ce6394e5d2c20a910e2209d93d73eb977799ced596ade1774513fc6a3811",
+  "original_scoring_script_status": "runtime error: KeyError NotebookLM; data uses NotebookLM (Gemini Notebook)",
+  "reproduction": {
+    "explicit_alias": "NotebookLM -> NotebookLM (Gemini Notebook)",
+    "excluded_hint_or_unresolved_fields": 10,
+    "scored_fields": 90,
+    "matching_transcript_labels": 68,
+    "disagreeing_transcript_labels": 22,
+    "agreement_fraction": 0.7555555556
+  },
+  "interpretation": "This compares prior guesses with transcript-extracted labels, not independently verified ground truth. Do not call this factual accuracy."
+}
