@@ -1,0 +1,50 @@
+name: Validate research submission
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Structural dataset validation
+        run: python src/validate.py
+      - name: Audit ledger arithmetic
+        run: python src/verify_sample.py --write
+      - name: Reproduce blind-prior comparison
+        run: python src/reproduce_prior_comparison.py
+      - name: Build static case study and linked assets
+        run: python src/build_report.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Check report and deployed asset paths
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import json
+          root = Path("site")
+          html = (root / "index.html").read_text(encoding="utf-8")
+          class Parser(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.rows=0; self.in_body=False
+              def handle_starttag(self, tag, attrs):
+                  attrs=dict(attrs)
+                  if tag=="tbody" and attrs.get("id")=="rows": self.in_body=True
+                  if tag=="tr" and self.in_body: self.rows+=1
+          parser=Parser(); parser.feed(html)
+          assert parser.rows==100, f"expected 100 report rows, got {parser.rows}"
+          for path in ["data/apps.json","data/apps.csv","audit/sample_review.json",
+                       "audit/verification_summary.json","audit/crosscheck.json",
+                       "audit/prior_comparison.json","audit/patterns.json","audit/run_log.md"]:
+              assert (root/path).is_file(), f"missing hosted report asset: {path}"
+          assert len(json.loads((root/"data/apps.json").read_text()))==100
+          print(f"PASS: {parser.rows} report rows; linked static assets exist")
+          PY
