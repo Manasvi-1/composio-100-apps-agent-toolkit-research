@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "candidate_inventory_not_verified",
+  "fields": [
+    "app_id",
+    "app_name",
+    "category",
+    "description",
+    "auth_methods",
+    "credential_access",
+    "api_type",
+    "api_breadth",
+    "official_mcp",
+    "toolkit_feasibility",
+    "blockers",
+    "evidence_urls",
+    "checked_at",
+    "confidence",
+    "notes"
+  ],
+  "credential_access": [
+    "self_serve",
+    "gated",
+    "mixed",
+    "unknown"
+  ],
+  "api_type": [
+    "REST",
+    "GraphQL",
+    "SOAP",
+    "SDK_only",
+    "webhooks",
+    "other",
+    "unknown"
+  ],
+  "official_mcp": [
+    "official",
+    "community",
+    "none_found",
+    "unknown"
+  ]
+}
