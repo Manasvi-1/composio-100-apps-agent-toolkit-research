@@ -1,0 +1,89 @@
+{
+  "audit_type": "official_source_claim_crosscheck",
+  "checked_at_utc": "2026-11-23",
+  "scope_note": "Targeted claims only; not complete validation of every field.",
+  "records": [
+    {
+      "app": "Salesforce",
+      "result": "supported_with_nuance",
+      "claim": "OAuth 2.0 authorizes REST API access; free Developer Edition exists for testing; connected-app creation restricted from Spring 2026, new integrations should use External Client Apps.",
+      "sources": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html"
+      ],
+      "note": "MCP classification not audited."
+    },
+    {
+      "app": "DealCloud",
+      "result": "supported_with_enterprise_gate",
+      "claim": "REST APIs and OAuth2 client credentials documented; hosted MCP exists but Celeste licensing and tenant/admin permissions apply.",
+      "sources": [
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/mcp/getting-started",
+        "https://api.docs.dealcloud.com/mcp/connections"
+      ],
+      "note": "Partner enum is coarse; sources establish license/tenant gates, not necessarily partner-only access."
+    },
+    {
+      "app": "LinkedIn Ads",
+      "result": "supported",
+      "claim": "OAuth 2.0; Marketing API permissions/application access require approval and vetting; some products require partner qualification.",
+      "sources": [
+        "https://learn.microsoft.com/en-gb/linkedin/shared/authentication/getting-access",
+        "https://www.linkedin.com/legal/l/marketing-api-terms",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/lms-faq?view=li-lms-2026-01"
+      ],
+      "note": "Rules vary by product and permission."
+    },
+    {
+      "app": "Pylon",
+      "result": "supported_with_admin_dependency",
+      "claim": "API tokens use bearer auth and require token-management permission; otherwise admin must create or grant access.",
+      "sources": [
+        "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token"
+      ],
+      "note": "Commercial plan not established by this source."
+    },
+    {
+      "app": "Brex",
+      "result": "supported_with_admin_and_terms",
+      "claim": "User token creation requires account/card admin and acceptance of developer API agreement.",
+      "sources": [
+        "https://developer.brex.com/guides/authentication"
+      ],
+      "note": "Does not validate every API product or sandbox."
+    },
+    {
+      "app": "Snowflake",
+      "result": "supported",
+      "claim": "REST API supports key-pair, OAuth, PAT, and workload identity federation.",
+      "sources": [
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+      ],
+      "note": "Multiple methods; abbreviated auth labels can omit alternatives."
+    },
+    {
+      "app": "Neo4j Aura",
+      "result": "supported_with_scope",
+      "claim": "Aura has versioned REST API, OAuth2 client credentials, API credentials across tiers, and free/trial tiers.",
+      "sources": [
+        "https://neo4j.com/docs/aura/api/authentication/",
+        "https://neo4j.com/docs/aura/api/overview/",
+        "https://neo4j.com/docs/aura/"
+      ],
+      "note": "Scope is Aura cloud API, not every self-hosted API."
+    },
+    {
+      "app": "HubSpot",
+      "result": "supported_and_refined",
+      "claim": "Official remote MCP at mcp.hubspot.com uses OAuth/PKCE and differs from local Developer MCP.",
+      "sources": [
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "https://developers.hubspot.com/ai-tools/mcp"
+      ],
+      "note": "Do not collapse the two official MCP products."
+    }
+  ]
+}
