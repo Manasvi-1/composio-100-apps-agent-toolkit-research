@@ -1,0 +1,1093 @@
+{
+  "source": "Exa retrieval + vendor first-party docs; adjudicated by assistant, not external human",
+  "reviewed_at_utc": "2026-11-23T15:35:51Z",
+  "summary": {
+    "reviewed_apps": 13,
+    "field_claims": 78,
+    "first_pass_supported": 42,
+    "first_pass_corrected": 22,
+    "not_established_or_unscored": 14,
+    "source_resolvable_claims": 64,
+    "first_pass_agreement": 0.65625,
+    "post_correction_source_alignment": 1,
+    "interpretation": "Source-review agreement on this selected 13-app high-risk sample only. Reviewer is assistant using retrieved first-party docs, not independent human; not a statistically representative or externally validated accuracy score. Paygent Connect remains unresolved and all its claims are excluded from source-resolvable score."
+  },
+  "records": [
+    {
+      "app": "Podio",
+      "app_id": 6,
+      "category": "CRM & Sales",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "oauth2"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "oauth2"
+          ],
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "free",
+          "source_review_status": "not_established",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "none",
+          "source_review_status": "not_established",
+          "normalized_after_review": "none",
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "OAuth2 incl. app-auth and password flows; API key self-serve at developers.podio.com.",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "OAuth2 incl. app-auth and password flows; API key self-serve at developers.podio.com.",
+          "evidence_urls": [
+            "https://developers.podio.com/authentication",
+            "https://developers.podio.com/"
+          ]
+        }
+      ],
+      "review_note": "OAuth2 and REST documented. Developer app registration is documented, but the source did not establish a free credential/plan entitlement or prove universal absence of MCP.",
+      "counts": {
+        "confirmed": 4,
+        "corrected": 0,
+        "not_established": 2
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Copper",
+      "app_id": 9,
+      "category": "CRM & Sales",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key",
+            "oauth2"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key",
+            "oauth2"
+          ],
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "trial",
+          "source_review_status": "not_established",
+          "normalized_after_review": "trial",
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "community",
+          "source_review_status": "not_established",
+          "normalized_after_review": "community",
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "caveats",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "caveats",
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Token+email headers; API access tied to paid plans (trial available); 180 req/min.",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "Token+email headers; API access tied to paid plans (trial available); 180 req/min.",
+          "evidence_urls": [
+            "https://developer.copper.com/introduction/authentication.html",
+            "https://developer.copper.com/introduction/requests.html"
+          ]
+        }
+      ],
+      "review_note": "Vendor confirms API key and OAuth2, RESTful access to most resources, user token generation and 180 requests/minute. Trial/paid-plan entitlement and community MCP label were not proven by these first-party pages.",
+      "counts": {
+        "confirmed": 4,
+        "corrected": 0,
+        "not_established": 2
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Ecwid",
+      "app_id": 47,
+      "category": "Ecommerce",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "oauth2",
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "oauth2",
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "paid",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "paid",
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "none",
+          "source_review_status": "not_established",
+          "normalized_after_review": "none",
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "caveats",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "caveats",
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "OAuth2 apps; custom-app secret_token; API access tied to paid plans (verify tier).",
+          "source_review_status": "corrected",
+          "normalized_after_review": "REST API is available only for paid stores; custom apps are created in store admin and issue store-scoped tokens, while public apps use OAuth2. Ecwid offers eligible developers a free paid-plan upgrade for test stores; API has no test mode.",
+          "evidence_urls": [
+            "https://docs.ecwid.com/api-reference",
+            "https://docs.ecwid.com/get-started/make-your-first-api-request",
+            "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+            "https://docs.ecwid.com/develop-apps/app-settings"
+          ]
+        }
+      ],
+      "review_note": "Paid-store requirement confirmed; custom app is created in store admin with store-scoped tokens, public apps use OAuth2. Eligible developers can request a free paid-plan test-store upgrade; no API test mode. MCP absence was not independently established.",
+      "counts": {
+        "confirmed": 4,
+        "corrected": 1,
+        "not_established": 1
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "fanbasis",
+      "app_id": 50,
+      "category": "Ecommerce",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "admin",
+          "source_review_status": "corrected",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "none",
+          "source_review_status": "not_established",
+          "normalized_after_review": "none",
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "outreach",
+          "source_review_status": "corrected",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "API key under Account > API Keys (per Tarvent); official API docs are password-protected; vendor folded into Commas.",
+          "source_review_status": "corrected",
+          "normalized_after_review": "Current Commas (Fanbasis) documentation exposes a public REST API; API keys are self-serve in Account > API Keys, with separate live and sandbox dashboards/keys. Verify tenant/product continuity for existing Fanbasis customers.",
+          "evidence_urls": [
+            "https://commasdocs.com/"
+          ]
+        }
+      ],
+      "review_note": "Current Fanbasis/Commas vendor docs are public: self-serve account API keys, REST endpoints and separate sandbox/live credentials. Previous password-protected-docs/outreach assessment is stale. Verify existing Fanbasis account migration/tenant continuity; official MCP not established.",
+      "counts": {
+        "confirmed": 2,
+        "corrected": 3,
+        "not_established": 1
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "MrScraper",
+      "app_id": 54,
+      "category": "Data & SEO",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "trial",
+          "source_review_status": "not_established",
+          "normalized_after_review": "trial",
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Bearer API key; free start, no card; MCP integration advertised.",
+          "source_review_status": "corrected",
+          "normalized_after_review": "API token is created in the dashboard and sent in x-api-token (Marketplace endpoints use Bearer); vendor documents an official MCP server with seven tools. Operations/usage remain plan-scoped.",
+          "evidence_urls": [
+            "https://docs.mrscraper.com/docs/api/authentication",
+            "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+          ]
+        }
+      ],
+      "review_note": "Vendor confirms x-api-token (Bearer on Marketplace endpoints), dashboard token generation and official MCP with seven tools. Trial/free-plan terms were not fully established from these technical pages.",
+      "counts": {
+        "confirmed": 4,
+        "corrected": 1,
+        "not_established": 1
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Waterfall.io",
+      "app_id": 59,
+      "category": "Data & SEO",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "unknown"
+          ],
+          "source_review_status": "corrected",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "partner",
+          "source_review_status": "corrected",
+          "normalized_after_review": "admin",
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "unknown",
+          "source_review_status": "corrected",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "unknown",
+          "source_review_status": "not_established",
+          "normalized_after_review": "unknown",
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "outreach",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "outreach",
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Product page links 'API Documentation' but no public auth/pricing details; contact-sales motion; UNRESOLVED - human follow-up.",
+          "source_review_status": "corrected",
+          "normalized_after_review": "Vendor documents REST endpoints and x-api-key, but API access is approval-based; request a key and pricing from Waterfall. Feature entitlements may be scoped; official MCP not confirmed (agent skills are documented).",
+          "evidence_urls": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://docs.waterfall.io/v1/faq"
+          ]
+        }
+      ],
+      "review_note": "Official docs now establish x-api-key and REST endpoints; API access/pricing is approval-based and requested from vendor, so 'partner-only' was narrowed to vendor approval. Official MCP not confirmed; docs mention agent skills.",
+      "counts": {
+        "confirmed": 1,
+        "corrected": 4,
+        "not_established": 1
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Clay",
+      "app_id": 60,
+      "category": "Data & SEO",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "free",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "caveats",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "caveats",
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Public API api.clay.com/public/v0 (clay-api-key, 13 ops, OpenAPI 3.1); docs say all plans incl free, pricing FAQ says Enterprise - conflict; tables read-only; MCP + CLI.",
+          "source_review_status": "corrected",
+          "normalized_after_review": "Developer platform and Public API are available across Free, Trial and paid plans; API/CLI usage consumes plan credits/results. Tables are read-only and structured-query features can be Enterprise-gated; official MCP uses self-service OAuth DCR.",
+          "evidence_urls": [
+            "https://developers.clay.com/public-api/authentication",
+            "https://university.clay.com/docs/clay-api-cli",
+            "https://university.clay.com/docs/connect-to-clay-mcp"
+          ]
+        }
+      ],
+      "review_note": "API key and Public API are available across Free/Trial/paid plans; usage consumes plan credits and limits scale by plan. Tables are read-only; some structured queries require Enterprise. Vendor documents official MCP and self-service OAuth DCR.",
+      "counts": {
+        "confirmed": 5,
+        "corrected": 1,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Coda",
+      "app_id": 78,
+      "category": "Productivity & PM",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "free",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Bearer API token from account settings; free tier; Superhuman Docs MCP (verify scope).",
+          "source_review_status": "corrected",
+          "normalized_after_review": "REST API is available to free and paid workspaces; PAT is user-scoped and API calls respect workspace roles. Official Superhuman Docs MCP is beta; OAuth or PAT depends on client.",
+          "evidence_urls": [
+            "https://coda.io/apis/v1/openapi.yaml",
+            "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+          ]
+        }
+      ],
+      "review_note": "REST API is available to free and paid workspaces; role permissions constrain calls. Vendor help confirms official beta MCP, with OAuth or PAT depending on client.",
+      "counts": {
+        "confirmed": 5,
+        "corrected": 1,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Paygent Connect",
+      "app_id": 84,
+      "category": "Finance & Fintech",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "partial: upstream NMI documentation; brand-to-provider relationship unresolved",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "not_established",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "partner",
+          "source_review_status": "not_established",
+          "normalized_after_review": "partner",
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "not_established",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "none",
+          "source_review_status": "not_established",
+          "normalized_after_review": "none",
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "outreach",
+          "source_review_status": "not_established",
+          "normalized_after_review": "outreach",
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "NMI gateway: security-key auth (username/password being retired 2026); merchant creds via acquirer/Paygent relationship.",
+          "source_review_status": "not_established",
+          "normalized_after_review": "NMI gateway: security-key auth (username/password being retired 2026); merchant creds via acquirer/Paygent relationship.",
+          "evidence_urls": [
+            "https://docs.nmi.com/reference/authentication",
+            "https://docs.nmi.com/reference/create-merchant-key"
+          ]
+        }
+      ],
+      "review_note": "Important unresolved identity/provenance issue: sources are generic NMI docs and do not independently prove Paygent Connect is NMI-powered or establish Paygent-specific access. Retain as unresolved; do not score this row as verified.",
+      "counts": {
+        "confirmed": 0,
+        "corrected": 0,
+        "not_established": 6
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "iPayX",
+      "app_id": 85,
+      "category": "Finance & Fintech",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "confirmed",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "free",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Not a classic PSP: FX audit; free API key; official mcp-fx-audit server (compare_fx_sources etc.).",
+          "source_review_status": "corrected",
+          "normalized_after_review": "Vendor documents three REST operations; Bearer API key, free tier (10 audits/day) and paid full-forensic tier; official hosted MCP has separate tools and rate limits.",
+          "evidence_urls": [
+            "https://www.ipayx.ai/docs/api?lang=en",
+            "https://www.ipayx.ai/docs/mcp-server"
+          ]
+        }
+      ],
+      "review_note": "Vendor documents Bearer API keys, three REST operations, free 10-audit/day tier and paid full forensic tier, plus its hosted official MCP. API breadth revised to narrow rather than generic medium.",
+      "counts": {
+        "confirmed": 5,
+        "corrected": 1,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Higgsfield",
+      "app_id": 97,
+      "category": "AI & Media",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "corrected",
+          "normalized_after_review": [
+            "api_key"
+          ],
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "paid",
+          "source_review_status": "corrected",
+          "normalized_after_review": "paid",
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "Server-side API creds (async request lifecycle); credit-based; official MCP + agent CLI (40+ models).",
+          "source_review_status": "corrected",
+          "normalized_after_review": "API credentials are key ID + secret (Authorization: Key …); API billing is separate pay-as-you-go prepaid USD balance, not a website subscription. Requests are asynchronous and model entitlements may vary.",
+          "evidence_urls": [
+            "https://docs.higgsfield.ai/docs/authentication",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+            "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+          ]
+        }
+      ],
+      "review_note": "API auth is key ID + secret ('Authorization: Key'), separate pay-as-you-go prepaid USD API billing; official account MCP uses OAuth and subscription credits, no API key. These are distinct products/auth paths.",
+      "counts": {
+        "confirmed": 3,
+        "corrected": 3,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "TranscriptAPI",
+      "app_id": 99,
+      "category": "AI & Media",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "corrected",
+          "normalized_after_review": [
+            "api_key",
+            "oauth2"
+          ],
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "trial",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "trial",
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "unknown",
+          "source_review_status": "corrected",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "now",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "API key from dashboard; credit-based (failed calls free); free tier; MCP mentioned in vendor comparisons (unverified).",
+          "source_review_status": "corrected",
+          "normalized_after_review": "REST API and official hosted MCP are documented; API-key and OAuth 2.1 auth; new accounts receive 100 free credits, while calls consume credits by endpoint.",
+          "evidence_urls": [
+            "https://transcriptapi.com/docs/api/",
+            "https://transcriptapi.com/docs/mcp/"
+          ]
+        }
+      ],
+      "review_note": "Vendor confirms REST API and hosted official MCP, OAuth 2.1 or API-key auth, and 100 free new-account credits. Unknown MCP label upgraded to official; OAuth added.",
+      "counts": {
+        "confirmed": 3,
+        "corrected": 3,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    },
+    {
+      "app": "Grain",
+      "app_id": 100,
+      "category": "AI & Media",
+      "review_type": "assistant-assisted primary-document review via Exa; not external human sign-off",
+      "source_validity": "first-party vendor docs retrieved for core reviewed claims",
+      "field_checks": [
+        {
+          "field": "auth_methods",
+          "first_pass": [
+            "api_key"
+          ],
+          "source_review_status": "corrected",
+          "normalized_after_review": [
+            "api_key",
+            "oauth2"
+          ],
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        },
+        {
+          "field": "credential_access",
+          "first_pass": "paid",
+          "source_review_status": "corrected",
+          "normalized_after_review": "free",
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        },
+        {
+          "field": "api_type",
+          "first_pass": "REST",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "REST",
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        },
+        {
+          "field": "mcp_status",
+          "first_pass": "official",
+          "source_review_status": "confirmed",
+          "normalized_after_review": "official",
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        },
+        {
+          "field": "buildability",
+          "first_pass": "caveats",
+          "source_review_status": "corrected",
+          "normalized_after_review": "now",
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        },
+        {
+          "field": "blocker",
+          "first_pass": "PAT (grain_pat_) from Settings > Integrations > API; Public-Api-Version header; plan gate reported but unconfirmed; Grain MCP exists.",
+          "source_review_status": "corrected",
+          "normalized_after_review": "Personal Access Token is self-serve and available on every plan; OAuth2 is for distributed apps. Workspace Access Token requires admin and Business/Enterprise; official MCP is OAuth and respects user permissions/plan features.",
+          "evidence_urls": [
+            "https://developers.grain.com/",
+            "https://support.grain.com/en/articles/15507288-grain-api",
+            "https://developers.grain.com/mcp/",
+            "https://support.grain.com/en/articles/14811968-grain-mcp"
+          ]
+        }
+      ],
+      "review_note": "PAT is self-serve and available on Free; OAuth2 is for distributable integrations. Workspace token requires admin and Business/Enterprise. Vendor documents official MCP; paid label was narrowed to workspace-token feature, not all API access.",
+      "counts": {
+        "confirmed": 2,
+        "corrected": 4,
+        "not_established": 0
+      },
+      "reviewed_at_utc": "2026-11-23T15:35:51Z"
+    }
+  ]
+}
