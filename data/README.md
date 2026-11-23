@@ -1,3 +1,5 @@
-# Dataset
+# Dataset provenance
 
-Place the app records in `apps.json` using `research_schema.json`. Start with 100 candidates split across 10 categories; label them as candidates until each record has official-source citations and is reviewed.
+The original apps.json was a candidate inventory, not findings. The normalized 100-record transcript extraction is currently assembled in the local deliverable archive; complete dataset publication to this repository is pending.
+
+Use official-source citations and claim-level provenance before treating fields as verified. See ../audit/crosscheck.json and ../audit/run_log.md.
