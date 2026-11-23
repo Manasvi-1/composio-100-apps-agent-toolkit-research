@@ -1233,17 +1233,19 @@
     "api_breadth": "medium",
     "mcp_status": "none",
     "buildability": "caveats",
-    "blocker": "OAuth2 apps; custom-app secret_token; API access tied to paid plans (verify tier).",
+    "blocker": "REST API is available only for paid stores; custom apps are created in store admin and issue store-scoped tokens, while public apps use OAuth2. Ecwid offers eligible developers a free paid-plan upgrade for test stores; API has no test mode.",
     "evidence_urls": [
       "https://docs.ecwid.com/api-reference",
-      "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+      "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+      "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "https://docs.ecwid.com/develop-apps/app-settings"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": true,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; paid-store requirement verified against first-party developer setup guide"
     }
   },
   {
@@ -1303,26 +1305,28 @@
     "id": 50,
     "app": "fanbasis",
     "category": "Ecommerce",
-    "description": "Creator monetization (now Commas)",
+    "description": "Creator commerce and monetization platform; API documentation now branded Commas",
     "auth_methods": [
       "api_key"
     ],
-    "credential_access": "admin",
+    "credential_access": "free",
     "api_type": "REST",
-    "api_breadth": "narrow",
+    "api_breadth": "broad",
     "mcp_status": "none",
-    "buildability": "outreach",
-    "blocker": "API key under Account > API Keys (per Tarvent); official API docs are password-protected; vendor folded into Commas.",
+    "buildability": "now",
+    "blocker": "Current Commas (Fanbasis) documentation exposes a public REST API; API keys are self-serve in Account > API Keys, with separate live and sandbox dashboards/keys. Verify tenant/product continuity for existing Fanbasis customers.",
     "evidence_urls": [
       "https://dev-docs.fanbasis.com/",
-      "https://www.tarvent.com/integrations/fanbasis"
+      "https://www.tarvent.com/integrations/fanbasis",
+      "https://commasdocs.com/"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": true,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; materially refreshed against current Commas first-party docs",
+      "correction": "previous admin/outreach/password-protected assessment is stale; public docs and sandbox now exist; production account eligibility still needs customer confirmation."
     }
   },
   {
@@ -1416,17 +1420,19 @@
     "api_breadth": "narrow",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Bearer API key; free start, no card; MCP integration advertised.",
+    "blocker": "API token is created in the dashboard and sent in x-api-token (Marketplace endpoints use Bearer); vendor documents an official MCP server with seven tools. Operations/usage remain plan-scoped.",
     "evidence_urls": [
       "https://docs.mrscraper.com/docs/api/overview",
-      "https://mrscraper.com/"
+      "https://mrscraper.com/",
+      "https://docs.mrscraper.com/docs/api/authentication",
+      "https://docs.mrscraper.com/docs/getting-started/mcp-server"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; official API auth and MCP pages reviewed"
     }
   },
   {
@@ -1539,24 +1545,27 @@
     "category": "Data & SEO",
     "description": "B2B waterfall enrichment (30+ vendors)",
     "auth_methods": [
-      "unknown"
+      "api_key"
     ],
-    "credential_access": "partner",
-    "api_type": "unknown",
-    "api_breadth": "unknown",
+    "credential_access": "admin",
+    "api_type": "REST",
+    "api_breadth": "medium",
     "mcp_status": "unknown",
     "buildability": "outreach",
-    "blocker": "Product page links 'API Documentation' but no public auth/pricing details; contact-sales motion; UNRESOLVED - human follow-up.",
+    "blocker": "Vendor documents REST endpoints and x-api-key, but API access is approval-based; request a key and pricing from Waterfall. Feature entitlements may be scoped; official MCP not confirmed (agent skills are documented).",
     "evidence_urls": [
       "https://www.waterfall.io/product/prospector",
-      "https://www.salesforge.ai/sales-tools-categories/data-enrichment-tools"
+      "https://www.salesforge.ai/sales-tools-categories/data-enrichment-tools",
+      "https://docs.waterfall.io/v1/authentication",
+      "https://docs.waterfall.io/v1/faq"
     ],
     "confidence": "low",
     "evidence_capture_mode": "extracted",
     "human_review_flag": true,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; updated from first-party API authentication/access docs",
+      "correction": "unknown auth/API -> API key/REST; partner label narrowed to vendor approval; MCP remains unconfirmed."
     }
   },
   {
@@ -1572,17 +1581,20 @@
     "api_breadth": "narrow",
     "mcp_status": "official",
     "buildability": "caveats",
-    "blocker": "Public API api.clay.com/public/v0 (clay-api-key, 13 ops, OpenAPI 3.1); docs say all plans incl free, pricing FAQ says Enterprise - conflict; tables read-only; MCP + CLI.",
+    "blocker": "Developer platform and Public API are available across Free, Trial and paid plans; API/CLI usage consumes plan credits/results. Tables are read-only and structured-query features can be Enterprise-gated; official MCP uses self-service OAuth DCR.",
     "evidence_urls": [
       "https://enrow.io/en/blog/clay-api-integrations",
-      "https://university.clay.com/docs/http-api-integration-overview"
+      "https://university.clay.com/docs/http-api-integration-overview",
+      "https://developers.clay.com/public-api/authentication",
+      "https://university.clay.com/docs/clay-api-cli",
+      "https://university.clay.com/docs/connect-to-clay-mcp"
     ],
     "confidence": "med",
     "evidence_capture_mode": "extracted",
     "human_review_flag": true,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; access and feature limits checked against first-party developer docs"
     }
   },
   {
@@ -2057,17 +2069,18 @@
     "api_breadth": "medium",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Bearer API token from account settings; free tier; Superhuman Docs MCP (verify scope).",
+    "blocker": "REST API is available to free and paid workspaces; PAT is user-scoped and API calls respect workspace roles. Official Superhuman Docs MCP is beta; OAuth or PAT depends on client.",
     "evidence_urls": [
       "https://coda.io/developers/apis/v1",
-      "https://www.scalekit.com/blog/coda-mcp-vs-api"
+      "https://www.scalekit.com/blog/coda-mcp-vs-api",
+      "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; official Coda/Superhuman docs API and MCP reviewed"
     }
   },
   {
@@ -2243,17 +2256,19 @@
     "api_breadth": "narrow",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Not a classic PSP: FX audit; free API key; official mcp-fx-audit server (compare_fx_sources etc.).",
+    "blocker": "Vendor documents three REST operations; Bearer API key, free tier (10 audits/day) and paid full-forensic tier; official hosted MCP has separate tools and rate limits.",
     "evidence_urls": [
       "https://www.ipayx.ai/",
-      "https://github.com/iPAYX-Technologies/mcp-fx-audit"
+      "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+      "https://www.ipayx.ai/docs/api?lang=en",
+      "https://www.ipayx.ai/docs/mcp-server"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; first-party API and MCP documentation reviewed"
     }
   },
   {
@@ -2559,18 +2574,21 @@
     "api_breadth": "medium",
     "mcp_status": "official",
     "buildability": "now",
-    "blocker": "Server-side API creds (async request lifecycle); credit-based; official MCP + agent CLI (40+ models).",
+    "blocker": "API credentials are key ID + secret (Authorization: Key …); API billing is separate pay-as-you-go prepaid USD balance, not a website subscription. Requests are asynchronous and model entitlements may vary.",
     "evidence_urls": [
       "https://docs.higgsfield.ai/",
       "https://higgsfield.ai/cli",
-      "https://higgsfield.ai/mcp"
+      "https://higgsfield.ai/mcp",
+      "https://docs.higgsfield.ai/docs/authentication",
+      "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; first-party API auth/billing and official MCP pages reviewed"
     }
   },
   {
@@ -2605,24 +2623,27 @@
     "category": "AI & Media",
     "description": "YouTube transcript/search API",
     "auth_methods": [
-      "api_key"
+      "api_key",
+      "oauth2"
     ],
     "credential_access": "trial",
     "api_type": "REST",
     "api_breadth": "narrow",
-    "mcp_status": "unknown",
+    "mcp_status": "official",
     "buildability": "now",
-    "blocker": "API key from dashboard; credit-based (failed calls free); free tier; MCP mentioned in vendor comparisons (unverified).",
+    "blocker": "REST API and official hosted MCP are documented; API-key and OAuth 2.1 auth; new accounts receive 100 free credits, while calls consume credits by endpoint.",
     "evidence_urls": [
       "https://transcriptapi.com/docs/api/",
-      "https://transcriptapi.com/"
+      "https://transcriptapi.com/",
+      "https://transcriptapi.com/docs/mcp/"
     ],
     "confidence": "med",
     "evidence_capture_mode": "search",
     "human_review_flag": false,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; official hosted MCP/auth reviewed",
+      "correction": "MCP unknown -> official; OAuth2 added; vendor documents 100 free credits."
     }
   },
   {
@@ -2631,24 +2652,29 @@
     "category": "AI & Media",
     "description": "Meeting recording / notes",
     "auth_methods": [
-      "api_key"
+      "api_key",
+      "oauth2"
     ],
-    "credential_access": "paid",
+    "credential_access": "free",
     "api_type": "REST",
-    "api_breadth": "narrow",
+    "api_breadth": "broad",
     "mcp_status": "official",
-    "buildability": "caveats",
-    "blocker": "PAT (grain_pat_) from Settings > Integrations > API; Public-Api-Version header; plan gate reported but unconfirmed; Grain MCP exists.",
+    "buildability": "now",
+    "blocker": "Personal Access Token is self-serve and available on every plan; OAuth2 is for distributed apps. Workspace Access Token requires admin and Business/Enterprise; official MCP is OAuth and respects user permissions/plan features.",
     "evidence_urls": [
       "https://developers.grain.com/",
-      "https://www.scalekit.com/blog/grain-mcp-vs-api"
+      "https://www.scalekit.com/blog/grain-mcp-vs-api",
+      "https://support.grain.com/en/articles/15507288-grain-api",
+      "https://developers.grain.com/mcp/",
+      "https://support.grain.com/en/articles/14811968-grain-mcp"
     ],
     "confidence": "med",
     "evidence_capture_mode": "extracted",
     "human_review_flag": true,
     "provenance": {
       "source": "Qwen transcript supplied by user",
-      "claim_status": "transcript-extracted; not fully independently verified in this run"
+      "claim_status": "transcript-extracted; first-party API/MCP docs reviewed",
+      "correction": "API paid gate narrowed: personal PAT is available on Free; workspace-wide token has admin/Business/Enterprise gate; official MCP confirmed."
     }
   }
 ]
