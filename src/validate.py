@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Structural and provenance validator for the published 100-app inventory."""
-import json,sys
+import json,re,sys
 from pathlib import Path
 from collections import Counter
 R=Path(__file__).resolve().parents[1]
@@ -29,7 +29,7 @@ for x in rows:
  if not isinstance(x.get("provenance"),dict):err.append(f"{x.get('app')}: provenance missing")
  for u in x["evidence_urls"]:
   url_count+=1
-  if not isinstance(u,str) or not u.startswith("https://") or " " in u:err.append(f"{x.get('app')}: invalid URL {u}")
+  if not isinstance(u,str) or not re.fullmatch(r"https://[^\s]+",u):err.append(f"{x.get('app')}: invalid URL {u}")
 print(f"records={len(rows)} unique_apps={len(set(names))} categories={len(cats)} evidence_url_refs={url_count}")
 print("structural errors:",len(err));print("\\n".join(err[:80]))
 sys.exit(bool(err))
